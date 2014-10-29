@@ -7,15 +7,15 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/home/yn/dev/ynHome/venv"
+setenv VIRTUAL_ENV "/home/nevalenny/ynhome/venv"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
 
 
 
-if ("(ynhome)" != "") then
-    set env_name = "(ynhome)"
+if ("" != "") then
+    set env_name = ""
 else
     if (`basename "$VIRTUAL_ENV"` == "__") then
         # special case for Aspen magic directories

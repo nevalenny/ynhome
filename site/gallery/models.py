@@ -1,9 +1,9 @@
 from django.db import models
 from django.core.files import File
-from string import join
+from os.path import join
 from PIL import Image as PImage
 import os
-from os.path import join as pjoin
+# from string import join as pjoin
 from tempfile import *
 
 # Create your models here.

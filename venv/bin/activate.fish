@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/yn/dev/ynHome/venv"
+set -gx VIRTUAL_ENV "/home/nevalenny/ynhome/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
@@ -52,8 +52,8 @@ if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
     # with the original prompt function copied, we can override with our own.
     function fish_prompt
         # Prompt override?
-        if test -n "(ynhome)"
-            printf "%s%s" "(ynhome)" (set_color normal)
+        if test -n ""
+            printf "%s%s" "" (set_color normal)
             _old_fish_prompt
             return
         end

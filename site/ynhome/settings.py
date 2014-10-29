@@ -44,7 +44,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
+    # 'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -63,11 +63,12 @@ DATABASES = {
     #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     # }
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'ynhome',
-        'USER': 'root',
+        # 'ENGINE': 'mysql.connector.django',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'nevalenny$ynhome',
+        'USER': 'nevalenny',
         'PASSWORD': '123',
-        'HOST': '127.0.0.1',   # Or an IP Address that your DB is hosted on
+        'HOST': 'mysql.server',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     }
 }
